@@ -1,0 +1,22 @@
+.footer {
+  background-color: rgb(44, 62, 80);
+}
+h4 {
+  font-weight: 700;
+  padding: 1.5rem 0;
+}
+.end {
+  background-color: rgb(26, 37, 47);
+}
+
+i {
+  color: white;
+  transition: 0.3s;
+}
+i:hover {
+  color: rgb(146, 143, 143);
+}
+
+p {
+  font-size: 1rem;
+}

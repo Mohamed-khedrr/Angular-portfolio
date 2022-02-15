@@ -1,0 +1,103 @@
+<section id="portofolio" class="portofolio text-center py-5 mt-5">
+  <h2 class="pt-5">PORTOFOLIO</h2>
+  <div class="star">
+    <i class="fa-solid fa-star fa-2x"></i>
+  </div>
+  <div class="container w-75">
+    <div class="row">
+      <div class="col-md-4 p-4">
+        <div class="content rounded-3 position-relative">
+          <img src="../../assets/imgs/12.png" class="w-100 rounded-3" />
+          <div
+            class="over-layer w-100 h-100 position-absolute top-0 rounded-3 d-flex justify-content-center align-items-center text-light"
+            (click)="openModal($event)"
+          >
+            <i class="fa-solid fa-plus fa-5x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-4">
+        <div class="content rounded-3 position-relative">
+          <img src="../../assets/imgs/13.png" class="img-fluid rounded-3" />
+          <div
+            class="over-layer w-100 h-100 position-absolute top-0 rounded-3 d-flex justify-content-center align-items-center text-light"
+            (click)="openModal($event)"
+          >
+            <i class="fa-solid fa-plus fa-5x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-4">
+        <div class="content rounded-3 position-relative">
+          <img src="../../assets/imgs/14.png" class="w-100 rounded-3" />
+          <div
+            class="over-layer w-100 h-100 position-absolute top-0 rounded-3 d-flex justify-content-center align-items-center text-light"
+            (click)="openModal($event)"
+          >
+            <i class="fa-solid fa-plus fa-5x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 p-4">
+        <div class="content rounded-3 position-relative">
+          <img src="../../assets/imgs/15.png" class="w-100 rounded-3" />
+          <div
+            class="over-layer w-100 h-100 position-absolute top-0 rounded-3 d-flex justify-content-center align-items-center text-light"
+            (click)="openModal($event)"
+          >
+            <i class="fa-solid fa-plus fa-5x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-4">
+        <div class="content rounded-3 position-relative">
+          <img src="../../assets/imgs/16.png" class="w-100 rounded-3" />
+          <div
+            class="over-layer w-100 h-100 position-absolute top-0 rounded-3 d-flex justify-content-center align-items-center text-light"
+            (click)="openModal($event)"
+          >
+            <i class="fa-solid fa-plus fa-5x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-4">
+        <div class="content rounded-3 position-relative">
+          <img src="../../assets/imgs/17.png" class="w-100 rounded-3" />
+          <div
+            class="over-layer w-100 h-100 position-absolute top-0 rounded-3 d-flex justify-content-center align-items-center text-light"
+            (click)="openModal($event)"
+          >
+            <i class="fa-solid fa-plus fa-5x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================== -->
+  <aside id="modal" class="p-4" (click)="clickOut($event)">
+    <div
+      id="inner-modal"
+      class="m-auto text-center py-md-5 px-md-5 bg-white position-relative"
+    >
+      <a class="close-icon text-decoration-none" (click)="closeModal()">
+        <i class="fa-solid fa-xmark fa-3x"></i>
+      </a>
+
+      <div id="container" class="cont container-md w-75 px-md-5">
+        <h2 class="py-3">{{ imgTitle }}</h2>
+        <div class="star">
+          <i class="fa-solid fa-star fa-2x"></i>
+        </div>
+        <img [src]="imgSrc" class="w-100 my-5" />
+        <p>{{ imgCaption }}.</p>
+        <button class="btn btn-success my-2" (click)="closeModal()">
+          Done
+        </button>
+      </div>
+    </div>
+  </aside>
+  <!-- ========================================================== -->
+</section>

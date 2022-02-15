@@ -1,0 +1,62 @@
+.over-layer {
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #1abc9c;
+}
+h2 {
+  color: rgb(44, 62, 80);
+}
+.star {
+  color: rgb(44, 62, 80);
+}
+.star::after,
+.star::before {
+  background-color: rgb(44, 62, 80);
+}
+.content {
+  cursor: pointer;
+}
+.content:hover .over-layer {
+  opacity: 0.8;
+}
+
+#modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#inner-modal {
+  border-radius: 1rem;
+  width: 75%;
+}
+#inner-modal img {
+  border-radius: 1rem;
+}
+
+.close-icon {
+  color: #1abc9c;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-weight: 1000;
+}
+
+.close-icon:hover {
+  color: #75ddc8;
+}
+
+@media (max-width: 992px) {
+  #container {
+    width: 95% !important;
+  }
+  #inner-modal {
+    padding: 1rem 0;
+  }
+}

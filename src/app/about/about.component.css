@@ -1,0 +1,8 @@
+.about {
+  background-color: #1abc9c;
+}
+
+.star::after,
+.star::before {
+  background-color: white;
+}

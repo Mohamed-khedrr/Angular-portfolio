@@ -1,0 +1,23 @@
+section#home {
+  background-color: #1abc9c;
+  height: 100vh;
+}
+#home h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#home img {
+  width: 15rem;
+}
+.star::before {
+  background-color: white;
+}
+.star::after {
+  background-color: white;
+}
+
+@media (min-width: 992px) {
+  #home h1 {
+    font-size: 4em;
+  }
+}

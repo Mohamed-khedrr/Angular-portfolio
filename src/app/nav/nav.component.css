@@ -1,0 +1,41 @@
+* {
+  font-weight: 700;
+}
+
+nav {
+  background-color: #2c3e50 !important;
+  font-weight: 500;
+  transition: 0.2s;
+  z-index: 999;
+}
+
+nav li a {
+  color: #fff;
+}
+nav li a:hover {
+  color: #1abc9c;
+}
+
+#brand {
+  font-size: 1.7rem;
+}
+button.navbar-toggler {
+  background-color: #1abc9c;
+  font-size: 1rem;
+}
+
+.nav-scrolling {
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+  padding-left: 4% !important;
+}
+
+.active {
+  color: white !important;
+  background-color: #1abc9c !important;
+  border-radius: 0.6rem;
+  transition: 0.3s;
+}
+.active a:hover {
+  color: white !important;
+}

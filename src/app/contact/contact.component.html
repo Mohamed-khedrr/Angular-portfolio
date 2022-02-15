@@ -1,0 +1,67 @@
+<section id="contact" class="contact p-5">
+  <h2 class="text-center pt-5">CONTACT ME</h2>
+  <div class="star">
+    <i class="fa-solid fa-star fa-2x"></i>
+  </div>
+
+  <form class="m-auto p-md-5">
+    <div class="input-container">
+      <p class="input-name text-success position-relative my-0">
+        <span class="position-absolute">Name</span>
+      </p>
+      <input
+        (keyup)="checkValue($event)"
+        type="text"
+        class="d-block"
+        placeholder="Name"
+        class="input-style w-100 nt-0"
+        required
+      />
+    </div>
+    <div class="input-container">
+      <p class="input-name text-success position-relative my-0">
+        <span class="position-absolute">Email</span>
+      </p>
+      <input
+        (keyup)="checkEmail($event)"
+        type="email"
+        class="d-block"
+        placeholder="Email"
+        class="email input-style w-100 nt-0"
+        required
+      />
+      <p class="input-name text-success position-relative my-0 text-danger">
+        <span class="position-absolute">Not a valid email address </span>
+      </p>
+    </div>
+
+    <div class="input-container">
+      <p class="input-name text-success position-relative my-0">
+        <span class="position-absolute">Phone Number</span>
+      </p>
+      <input
+        (keyup)="checkValue($event)"
+        type="text"
+        class="d-block"
+        placeholder="Phone Number"
+        class="input-style w-100 nt-0"
+        required
+      />
+    </div>
+    <div class="input-container">
+      <p class="input-name text-success position-relative my-0">
+        <span class="position-absolute">Message</span>
+      </p>
+      <textarea
+        (keyup)="checkValue($event)"
+        type="text"
+        class="d-block"
+        placeholder="Message"
+        class="input-style w-100 py-4"
+        rows="5"
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn text-white px-4 py-3 my-4">Send</button>
+  </form>
+</section>
